@@ -134,6 +134,7 @@ dmypy.json
 data/breast_imaging
 data/breast_imaging_340px
 data/breast_imaging_500px
+data/breast_imaging_2500px
 data/test_images
 data/train_images
 data/rsna-breast-cancer-detection.zip
