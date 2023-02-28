@@ -9,18 +9,7 @@ from tensorflow.keras.preprocessing.image import img_to_array, load_img, smart_r
 
 import streamlit as st
 
-
-def calculate_time_took(start, progress_bar):
-    processed_time = time.time()
-    time_elapsed = round(processed_time - start_time, 4)
-    st.info(f"Time Elapsed {time_elapsed}")
-
-
 # model = load_model("models\*********.h5")
-# current datetime
-start_time = time.time()
-my_progress_bar = st.progress(0)
-
 
 st.title("Cancer Classification Model")
 
@@ -77,5 +66,3 @@ st.info(age)
 
 if file:
     file.close()
-
-calculate_time_took(start_time, my_progress_bar)
