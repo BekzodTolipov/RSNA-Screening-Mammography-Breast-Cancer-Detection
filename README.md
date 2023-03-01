@@ -41,10 +41,10 @@ Following python libraried were used during the project:
 Radiological Society of North America (RSNA) provided anonymized patients meta data and mammogram in `dicom` format. There are roughly 8000 patients and usually 4 mammograms per patient. 
 ## EDA
 Cancer Correlation
-![Cancer Correlation](charts\cancer_corr.png)
+![Cancer Correlation](charts/cancer_corr.png)
 
 CAll Correlation
-![All Correlation](charts\full_corr.png)
+![All Correlation](charts/full_corr.png)
 
 Total Classifications
 ![Total Classifications](charts/total_classifications.png)
@@ -62,7 +62,7 @@ Breast Density C View CC
 ![Breast C View CC](charts/density_c_cc.png)
 
 Gradient Heatmap for XCEPTION model
-![Gradient Heatmap for XCEPTION model](charts\model_diagnosis\breast_xception_heatmap.jpg)
+![Gradient Heatmap for XCEPTION model](charts/model_diagnosis/breast_xception_heatmap.jpg)
 
 ## Modeling
 Based on American Cancer Society adding density into your model improves the classification performance for cancer. The dataset I have collected had 50% missing density and I have built CNN+MLP (Mixed Dataset) model which can be used for `density` and `cancer` classifications.
@@ -73,20 +73,20 @@ Cancer classification required more in depth work since it was highly imbalanced
 - Under Sample:
   - Model train/test: 0.50/0.46 accuracy with f-1 score of 0.54
 
-![Under Sampled Dataset Accuracy](charts\Under-Sampled-Dataset\cancer_xception_acc_6.png)
+![Under Sampled Dataset Accuracy](charts/Under-Sampled-Dataset/cancer_xception_acc_6.png)
 
-![Under Sampled Dataset Confusion Matrix](charts\Cancer-Under-Sample-Stats\cancer_confusion_matrix_after_adjustment.png)
+![Under Sampled Dataset Confusion Matrix](charts/Cancer-Under-Sample-Stats/cancer_confusion_matrix_after_adjustment.png)
 
-![Under Sampled Dataset ROC Curve](charts\Cancer-Under-Sample-Stats\cancer_roc_curve_after_adjutment.png)
+![Under Sampled Dataset ROC Curve](charts/Cancer-Under-Sample-Stats/cancer_roc_curve_after_adjutment.png)
 
 - Over Sample:
   - Model train/test: 0.98/0.85 accuracy with f-1 score of 0.61
 
-![Over Sampled Dataset Accuracy](charts\Over-Sampled-Dataset\cancer_xception_acc_57.png)
+![Over Sampled Dataset Accuracy](charts/Over-Sampled-Dataset/cancer_xception_acc_57.png)
 
-![Over Sampled Dataset Confusion Matrix](charts\Cancer-Over-Sample-Stats\cancer_confusion_matrix_after_adjustment.png)
+![Over Sampled Dataset Confusion Matrix](charts/Cancer-Over-Sample-Stats/cancer_confusion_matrix_after_adjustment.png)
 
-![Over Sampled Dataset ROC Curve](charts\Cancer-Over-Sample-Stats\cancer_roc_curve_after_adjutment.png)
+![Over Sampled Dataset ROC Curve](charts/Cancer-Over-Sample-Stats/cancer_roc_curve_after_adjutment.png)
 
 
 ## Conclusion & Recommendation
