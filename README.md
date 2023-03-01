@@ -67,7 +67,7 @@ Gradient Heatmap for XCEPTION model
 ## Modeling
 Based on American Cancer Society adding density into your model improves the classification performance for cancer. The dataset I have collected had 50% missing density and I have built CNN+MLP (Mixed Dataset) model which can be used for `density` and `cancer` classifications.
 
-Density classification contained 4 different rating `{A, B, C, D}`, `A` being the least dense and `D` being the most dense. I have grouped A and B to group `Not Dense`, C and D to group `Dense` to prepare for my modeling. Baseline for density I had roughly 53% of training dataset being `Not Dense`. Training the model validation AUC=85%, and after adjusting threshold to 0.1 AUC improved to 86% where total (Type-I: 80) and (Type-II: 62) out of 1000 patients. This adjustment was necessary since it is important for model to provide less Type-II errors since `Dense` density is harder to detect cancer in mammogram.
+Density classification contained 4 different rating `{A, B, C, D}`, `A` being the least dense and `D` being the most dense. I have grouped A and B to group `Not Dense`, C and D to group `Dense` to prepare for my modeling. Baseline for density I had roughly 53% of training dataset being `Not Dense`. Training the model validation AUC=85%, and after adjusting threshold to 0.1 AUC improved to 86% where total (Type-I: 106) and (Type-II: 44) out of 1000 patients. This adjustment was necessary since it is important for model to provide less Type-II errors since `Dense` density is harder to detect cancer in mammogram.
 
 Cancer classification required more in depth work since it was highly imbalanced 97% of total patient dataset being negative cancer diagnosis. I have picked two routes to solve this issue:
 - Under Sample:
