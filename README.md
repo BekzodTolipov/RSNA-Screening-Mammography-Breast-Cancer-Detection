@@ -61,6 +61,9 @@ Left CC View Of Breast
 Breast Density C View CC
 ![Breast C View CC](charts/density_c_cc.png)
 
+Gradient Heatmap for XCEPTION model
+![Gradient Heatmap for XCEPTION model](charts\model_diagnosis\breast_xception_heatmap.jpg)
+
 ## Modeling
 Based on American Cancer Society adding density into your model improves the classification performance for cancer. The dataset I have collected had 50% missing density and I have built CNN+MLP (Mixed Dataset) model which can be used for `density` and `cancer` classifications.
 
