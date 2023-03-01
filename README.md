@@ -90,7 +90,7 @@ Cancer classification required more in depth work since it was highly imbalanced
 
 
 ## Conclusion & Recommendation
-
+Dataset contained BIRADS feature which was not utilized due to time constraint. Working with imbalanced dataset presented difficulties on preparing data for modeling. Under sampling data was not helpful since model is not learning as much compared to Over sampling. I recommend adding more hidden layer, adjust learning rate, add random dropouts and test with different models to check the differences.
 
 ## References
 [American Cancer Society](https://www.cancer.org/cancer/breast-cancer/screening-tests-and-early-detection/mammograms/breast-density-and-your-mammogram-report.html)
